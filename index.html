@@ -1,181 +1,75 @@
-<!DOCTYPE html>
-<html lang="zh-cmn-Hans">
+---
+layout: default
+---
 
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
-    <meta name="description" content="前端开发一枚, 坐标杭州">
-    <meta name="keywords" content="简历, resume, 前端, 求职">
-    <meta name="author" content="诺亚的雎鸠, kkxujq@163.com">
-    <meta name="generator" content="Atom">
-    <meta name="copyright" content="kkxujq@163.com">
-    <meta name="robots" content="all">
-    <meta name="format-detection" content="telphone=no, email=no">
-    <meta http-equiv="Cache-Control" content="no-siteapp">
-    <meta name="x5-fullscreen" content="true">
-    <meta name="full-screen" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="screen-orientation" content="portrait">
-    <meta name="x5-orientation" content="portrait">
-    <meta name="browsermode" content="application">
-    <meta name="x5-page-mode" content="app">
-    <meta name="renderer" content="webkit">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="HandheldFriendly" content="true">
-    <link rel="icon" href="./static/images/favicon.png" sizes="48x48" type="image/png">
-    <title>[简历]诺亚的雎鸠-前端开发工程师/杭州</title>
-    <link rel="stylesheet" href="./static/css/typo.css">
-    <link rel="stylesheet" href="./static/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./static/css/index.css">
-    <script src="./static/js/script.js"></script>
-</head>
+<div id="ace-content" class="ace-container-shift">
+    <div class="ace-container">
+        <div id="ace-nav-wrap" class="hidden-sm hidden-xs">
+            <div class="ace-nav-cont">
+                <div id="ace-nav-scroll">
+                    <nav id="ace-nav" class="ace-nav">
+                        <ul class="clear-list">
+                            <li>
+                              <a href="index.html" data-tooltip="Home"><img class="avatar avatar-42" src="{{ '/styles/img/show-star.png' | prepend: site.baseurl }}" alt=""></a>
+                            </li>
+                            <li>
+                              <a href="#basic_info" data-tooltip="基本信息"><span class="ace-icon ace-icon-home"></span></a>
+                            </li>
+                            <li>
+                              <a href="#profetional" data-tooltip="职业技能"><span class="ace-icon ace-icon-experience"></span></a>
+                            </li>
 
-<body>
-    <div class="header"></div>
-    <div class="container">
-        <div class="side">
-            <!-- 个人肖像 -->
-            <div class="me">
-                <div class="portrait">
-                    <a href="#">
-                        <img src="./static/images/img-cv.png">
-                    </a>
+                            <li>
+                              <a href="#education" data-tooltip="教育经历"><span class="ace-icon ace-icon-portfolio"></span></a>
+                            </li>
+                            
+                            <li>
+                              <a href="#experience" data-tooltip="工作经历"><span class="ace-icon ace-icon-references"></span></a>
+                            </li>
+                            <li>
+                              <a href="#certification" data-tooltip="获得证书"><span class="ace-icon ace-icon-blog"></span></a>
+                            </li>
+                            <li>
+                              <a href="#personal_project" data-tooltip="个人作品"><span class="ace-icon ace-icon-snowflake-o"></span></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <h1>诺亚的雎鸠</h1>
-                <h4>前端开发工程师 / 杭州</h4>
-            </div>
-            <!-- 基本信息 -->
-            <div class="profile info-unit">
-                <h2><i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <label>个人信息</label>
-                        <span>诺亚 / 男 / 24岁</span>
-                    </li>
-                    <li>
-                        <label>邮箱</label>
-                        <a href="mailto:kkxujq@163.com" target="_blank">kkxujq@163.com</a>
-                    </li>
-                    <li>
-                        <label>个人主页</label>
-                        <a href="https://kkxujq.github.io/" target="_blank">kkxujq.github.io/</a>
-                    </li>                   
-                </ul>
-            </div>
-            <!-- 技能点 -->
-            <div class="skill info-unit">
-                <h2><i class="fa fa-star-o" aria-hidden="true"></i>技能点</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <label>HTML/CSS</label>
-                        <progress value="90" max="100"></progress>
-                    </li>
-                    <li>
-                        <label>JavaScript</label>
-                        <progress value="85" max="100"></progress>
-                    </li>
-                </ul>
-            </div>
-            <!-- 技术栈 -->
-            <div class="stack info-unit">
-                <h2><i class="fa fa-code" aria-hidden="true"></i>技术栈</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <label>前端</label>
-                        <span>Angular、ES6、Webpack</span>
-                    </li>
-                    <li>
-                        <label>后端</label>
-                        <span>Node.js、MySQL、Oracle</span>
-                    </li>
-                    <li>
-                        <label>其他</label>
-                        <span>Git、Markdown</span>                       
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="main">
-            <!-- 教育经历 -->
-            <div class="edu info-unit">
-                <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <h3>********** - *********专业（本科）
-                        <time>2013.9-2017.6</time>
-                    </h3>
-                        <p>专业排名
-                            <mark>15/90</mark> ，期间发表国内核心期刊文章1篇，三等奖学金2次。
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <!-- 工作经历 -->
-            <div class="work info-unit">
-                <h2><i class="fa fa-shopping-bag" aria-hidden="true"></i>工作经历</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <h3>
-                        <span>******网络科技有限公司－前端开发工程师</span>
-                        <time>2016.**至今</time>
-                    </h3>
-                        <ul class="info-content">
-                            <li>
-                                深度参与***项目迭代17-19的前端开发工作，独立承担并完成******、*****、******等功能点的开发，主要维护并修复****、****、****等功能点bug若干。项目采用技术栈
-                                <mark>React+React Router+Node.js+SASS</mark> ，实现
-                                <mark>前后端完全分离</mark> 。
-                            </li>
-                            <li>配合UI和后端，根据产品需求提供H5页面嵌入到后台模板，要求
-                                <mark>移动端显示正常</mark> 。
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- 项目经验 -->
-            <div class="project info-unit">
-                <h2><i class="fa fa-terminal" aria-hidden="true"></i>个人项目</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <h3>
-                        <span>肿瘤流行病数据可视化</span>
-                        <span class="link"><a href="http://med-it.cn/CEDV/index.php" target="_blank">Demo</a></span>
-                        <time>201*.*-201*.*</time>
-                    </h3>
-                        <ul class="info-content">
-                            <li>技术栈：HTML 5+D3.js+ECharts+MySQL</li>
-                            <li>
-                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i> 实现常见肿瘤流行病数据多维度可视化展示、数据透视及分析。
-                                <i class="fa fa-users" aria-hidden="true"></i> 与 1 位同学，
-                                <i class="fa fa-bars" aria-hidden="true"></i> 分析项目需求，清洗并整理相关数据(扩展第三方知识组织系统和 Google trends 数据)，并用
-                                <mark>D3.js</mark> 和
-                                <mark>ECharts</mark> 进行图形化展示以及实现简易自动分析 功能。
-                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 作品取得第二届共享杯国家级竞赛“特等奖”。(1/1500)
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- 自我评价 -->
-            <div class="work info-unit">
-                <h2><i class="fa fa-pencil" aria-hidden="true"></i>自我期望</h2>
-                <hr/>
-                <p><span class="mark-txt">“多静多思考，反省不张扬”</span>是我给自己总结的“十字箴言”，鞭策自己做人既不能以己度人，更不以人观己，要脚踏实地做事，坚持自己的梦想和本心。</p>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <p>© 2017 诺亚的雎鸠.文档最后更新时间为
-            <time>2017年3月27日</time> .
-        </p>
-    </div>
-</body>
 
-</html>
+                <div id="ace-nav-tools" class="hidden">
+                    <span class="ace-icon ace-icon-dots-three-horizontal"></span>
+
+                    <button id="ace-nav-arrow" class="clear-btn">
+                        <span class="ace-icon ace-icon-chevron-thin-down"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- <div class="ace-nav-btm"></div> -->
+        </div><!-- .ace-nav-wrap -->
+
+        <div class="ace-paper-stock">
+            <main class="ace-paper clearfix">
+                <div class="ace-paper-cont clear-mrg">
+                    <!-- START: PAGE CONTENT -->
+                    <div class="padd-box clear-mrg">
+
+                    {% include resumer_01-basic.html %}
+
+                    {% include resumer_02-profetional.html %}
+
+                    {% include resumer_03-education.html %}
+
+                    {% include resumer_04-experience.html %}
+
+                    {% include resumer_05-certification.html %}
+
+                    {% include resumer_06-personal_project.html %}
+                        
+                    </div><!-- .padd-box -->
+                <!-- END: PAGE CONTENT -->
+                </div><!-- .ace-paper-cont -->
+            </main><!-- .ace-paper -->
+        </div><!-- .ace-paper-stock -->
+    </div><!-- .ace-container -->
+</div><!-- #ace-content -->
